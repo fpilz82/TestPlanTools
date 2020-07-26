@@ -1,0 +1,22 @@
+<Project Sdk="Microsoft.NET.Sdk">
+    <PropertyGroup>
+        <OutputType>Exe</OutputType>
+        <TargetFramework>netcoreapp3.1</TargetFramework>
+        <PackageId>TheTestAutomator.TestPlanTools</PackageId>
+        <Authors>Florian Pilz</Authors>
+        <Company>Florian Pilz</Company>
+        <Product>TestPlanTools</Product>
+        <Description>Lib that provides functionality for Azure DevOps TestPlan and test automation</Description>
+        <Copyright/>
+        <PackageLicenseExpression>MIT</PackageLicenseExpression>
+        <PackageTags>test automation, testing, test plan, test case</PackageTags>
+    </PropertyGroup>
+    <ItemGroup>
+        <PackageReference Include="Serilog" Version="*"/>
+        <PackageReference Include="Serilog.Extensions.Logging" Version="*"/>
+        <PackageReference Include="Serilog.Sinks.File" Version="*"/>
+        <PackageReference Include="Serilog.Sinks.Console" Version="*"/>
+        <PackageReference Include="NUnit3TestAdapter" Version="3.17.0"/>
+        <PackageReference Include="RestSharp.Serializers.NewtonsoftJson" Version="106.11.4" />
+    </ItemGroup>
+</Project>
