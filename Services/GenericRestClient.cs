@@ -10,7 +10,6 @@ namespace TestPlanTools.Services
     public class GenericRestClient
     {
         private DevOpsConfiguration _config;
-        private string _token;
 
         public GenericRestClient(DevOpsConfiguration config)
         {
