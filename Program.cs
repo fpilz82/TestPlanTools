@@ -24,9 +24,9 @@ namespace TestPlanTools
         }
 
         [TestCaseId("123")]
-        public static void PrintAllAttributedMethodsInExecutingAssembly()
+        public static void ExampleTestMethod()
         {
-
+            // ...
         }
     }
 }
