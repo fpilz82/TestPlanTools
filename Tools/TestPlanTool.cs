@@ -1,9 +1,9 @@
 using Serilog;
 using Serilog.Core;
-using TestPlanTools.Services;
-using TestPlanTools.Tools;
+using TPTools.Services;
+using TPTools.Tools;
 
-namespace TestPlanTools
+namespace TPTools
 {
     public class TestPlanTools
     {

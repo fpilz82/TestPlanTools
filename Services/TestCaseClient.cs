@@ -1,9 +1,9 @@
 using System.Net;
 using Serilog;
-using TestPlanTools.Extensions;
-using TestPlanTools.Models;
+using TPTools.Extensions;
+using TPTools.Models;
 
-namespace TestPlanTools.Services
+namespace TPTools.Services
 {
     public class TestCaseClient : WorkItemClient
     {

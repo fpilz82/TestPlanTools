@@ -1,6 +1,6 @@
 using System;
 
-namespace TestPlanTools.Models
+namespace TPTools.Models
 {
     public class TestCaseAssociationData
     {

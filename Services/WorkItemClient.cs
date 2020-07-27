@@ -1,7 +1,6 @@
 using RestSharp;
-using TestPlanTools.Services;
 
-namespace TestPlanTools.Services
+namespace TPTools.Services
 {
 
     public class WorkItemClient : GenericRestClient

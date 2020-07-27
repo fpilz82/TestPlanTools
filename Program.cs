@@ -1,8 +1,8 @@
-﻿using TestPlanTools.Attributes;
-using TestPlanTools.Extensions;
-using TestPlanTools.Services;
+﻿using TPTools.Attributes;
+using TPTools.Extensions;
+using TPTools.Services;
 
-namespace TestPlanTools
+namespace TPTools
 {
     class Program
     {

@@ -4,11 +4,8 @@ using System.IO;
 using System.Linq;
 using System.Reflection;
 using Serilog;
-using Serilog.Core;
-using TestPlanTools.Attributes;
-using TestPlanTools.Models;
 
-namespace TestPlanTools.Refelection
+namespace TPTools.Refelection
 {
     public static class MethodIdentifier
     {

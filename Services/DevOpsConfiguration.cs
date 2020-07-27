@@ -1,6 +1,6 @@
 using System.Security;
 
-namespace TestPlanTools.Services
+namespace TPTools.Services
 {
     public class DevOpsConfiguration
     {

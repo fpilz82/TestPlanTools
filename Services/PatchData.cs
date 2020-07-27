@@ -2,7 +2,7 @@ using System.Collections.Generic;
 using Newtonsoft.Json;
 using Newtonsoft.Json.Serialization;
 
-namespace TestPlanTools.Services
+namespace TPTools.Services
 {
     public class PatchDataList
     {
