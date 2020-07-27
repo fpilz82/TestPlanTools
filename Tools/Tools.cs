@@ -1,16 +1,16 @@
 using Serilog;
 using Serilog.Core;
-using TPTools.Services;
-using TPTools.Tools;
+using TestPlanTools.Services;
+using TestPlanTools.Tools;
 
-namespace TPTools
+namespace TestPlanTools
 {
-    public class TestPlanTools
+    public class TestPlanTool
     {
         public Logger Logger;
         private DevOpsConfiguration _config;
 
-        public TestPlanTools(DevOpsConfiguration config)
+        public TestPlanTool(DevOpsConfiguration config)
         {
             _config = config;
             Log.Logger = new LoggerConfiguration()

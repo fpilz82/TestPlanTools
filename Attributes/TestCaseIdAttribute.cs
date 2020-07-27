@@ -1,6 +1,6 @@
 using System;
 
-namespace TPTools.Attributes
+namespace TestPlanTools.Attributes
 {
     [AttributeUsage(AttributeTargets.Method, AllowMultiple = false, Inherited = false)]
     public class TestCaseIdAttribute : Attribute

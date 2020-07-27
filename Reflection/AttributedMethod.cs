@@ -1,7 +1,7 @@
 using System;
 using System.Reflection;
 
-namespace TPTools.Refelection
+namespace TestPlanTools.Refelection
 {
     public class AttributedMethod
     {

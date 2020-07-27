@@ -1,7 +1,7 @@
 using System.Security;
 using Newtonsoft.Json.Linq;
 
-namespace TPTools.Extensions
+namespace TestPlanTools.Extensions
 {
     public static class StringExtensions
     {

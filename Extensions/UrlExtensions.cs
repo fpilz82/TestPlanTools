@@ -1,6 +1,6 @@
 using System;
 
-namespace TPTools.Extensions
+namespace TestPlanTools.Extensions
 {
     public static class UrlExtensions
     {

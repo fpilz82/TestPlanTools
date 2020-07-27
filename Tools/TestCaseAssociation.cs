@@ -1,10 +1,10 @@
 using System;
 using System.Collections.Generic;
-using TPTools.Attributes;
-using TPTools.Models;
-using TPTools.Refelection;
+using TestPlanTools.Attributes;
+using TestPlanTools.Models;
+using TestPlanTools.Refelection;
 
-namespace TPTools.Tools
+namespace TestPlanTools.Tools
 {
     public class TestCaseAssociation
     {

@@ -1,14 +1,14 @@
-﻿using TPTools.Attributes;
-using TPTools.Extensions;
-using TPTools.Services;
+﻿using TestPlanTools.Attributes;
+using TestPlanTools.Extensions;
+using TestPlanTools.Services;
 
-namespace TPTools
+namespace TestPlanTools
 {
     class Program
     {
         static void Main(string[] args)
         {
-            var tpt = new TestPlanTools(new DevOpsConfiguration
+            var tpt = new TestPlanTool(new DevOpsConfiguration
             {
                 Url = "",
                 Project = "",

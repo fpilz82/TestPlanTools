@@ -1,10 +1,10 @@
-using TPTools.Extensions;
+using TestPlanTools.Extensions;
 using Newtonsoft.Json;
 using RestSharp;
 using RestSharp.Authenticators;
 using Serilog;
 
-namespace TPTools.Services
+namespace TestPlanTools.Services
 {
     public class GenericRestClient
     {

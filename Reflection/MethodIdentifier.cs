@@ -5,7 +5,7 @@ using System.Linq;
 using System.Reflection;
 using Serilog;
 
-namespace TPTools.Refelection
+namespace TestPlanTools.Refelection
 {
     public static class MethodIdentifier
     {

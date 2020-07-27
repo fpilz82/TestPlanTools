@@ -1,4 +1,4 @@
-namespace TPTools.Models
+namespace TestPlanTools.Models
 {
     public class TestCase
     {
