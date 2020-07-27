@@ -11,7 +11,7 @@ namespace TestPlanTools.Tools
         public List<TestCaseAssociationData> AssociateTestCases()
         {
             var resultList = new List<TestCaseAssociationData>();
-            List<AttributedMethod> attributedMethods = MethodIdentifier.GetAllAttributedMethodsInCallingAssembly<TestCaseIdAttribute>();
+            List<AttributedMethod> attributedMethods = MethodIdentifier.GetAllAttributedMethodsInAssemblies<TestCaseIdAttribute>();
 
             foreach (var method in attributedMethods)
             {

@@ -9,27 +9,39 @@ namespace TestPlanTools.Refelection
 {
     public static class MethodIdentifier
     {
-        private static Assembly _assembly;
 
-        public static List<AttributedMethod> GetAllAttributedMethodsInCallingAssembly<T>() where T: Attribute
+        public static List<AttributedMethod> GetAllAttributedMethodsInAssemblies<T>() where T: Attribute
         {
-            
-            _assembly = Assembly.GetCallingAssembly();
             var methodList = new List<AttributedMethod>();
+            var assemblies = AppDomain.CurrentDomain.GetAssemblies();
 
-            foreach (var ns in _assembly
-                                .GetTypes()
-                                .Select(t => t.Namespace)
-                                .Distinct())
+            foreach(var assembly in assemblies)
             {
-                methodList.AddRange(GetAllAttributedMethodsInNamespace<T>(ns));
+
+                foreach (var ns in assembly
+                                    .GetTypes()
+                                    .Select(t => t.Namespace)
+                                    .Distinct())
+                {
+                    methodList.AddRange(GetAllAttributedMethodsInNamespace<T>(assembly, ns));
+                }
+
+
+
+
+
             }
+
+
+
+
+
             return methodList;
         }
-        private static List<AttributedMethod> GetAllAttributedMethodsInNamespace<T>(string nameSpace) where T: Attribute
+        private static List<AttributedMethod> GetAllAttributedMethodsInNamespace<T>(Assembly assembly, string nameSpace) where T: Attribute
         {
-            var filename = GetCallingAssemblyFileName();
-            var types = _assembly.GetTypes().Where(t => t.IsClass && t.Namespace == @nameSpace);
+            var filename = GetAssemblyFileName(assembly);
+            var types = assembly.GetTypes().Where(t => t.IsClass && t.Namespace == @nameSpace);
             var resultList = new List<AttributedMethod>();
 
             foreach (var type in types)
@@ -52,7 +64,7 @@ namespace TestPlanTools.Refelection
             }
             return resultList;
         }
-        private static string GetCallingAssemblyFileName() =>
-            Path.GetFileName(_assembly.CodeBase);
+        private static string GetAssemblyFileName(Assembly assembly) =>
+            Path.GetFileName(assembly.CodeBase);
     }
 }

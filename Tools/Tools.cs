@@ -21,6 +21,7 @@ namespace TestPlanTools
 
         public void AssociateTestCases(bool forceUpdate = false)
         {
+            Log.Logger.Information("Start test case association");
             var associatedTestCases = new TestCaseAssociation().AssociateTestCases();
             var client = new TestCaseClient(_config);
 

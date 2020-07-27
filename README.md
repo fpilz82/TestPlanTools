@@ -17,7 +17,7 @@ public static void TestMethod()
 }
 ```
 
-Then initialize the TestPlanTool, set your DevOps-account and call method 'AssociateTestCases'. This must be done from inside the assembly that contains the tests.
+Then initialize the TestPlanTool, set your DevOps-account and call method 'AssociateTestCases'.
 
 ```c#
 var testPlanTools = new TestPlanTool(new DevOpsConfiguration
