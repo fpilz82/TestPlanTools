@@ -6,12 +6,12 @@
         <Authors>Florian Pilz</Authors>
         <Company>Florian Pilz</Company>
         <Product>TestPlanTools</Product>
-        <RepositoryUrl>https://github.com/fpilz82/TestPlanTools</RepositoryUrl>
+        <RepositoryUrl>https://github.com/thetestautomator/TestPlanTools.git</RepositoryUrl>
         <Description>Lib that provides functionality for Azure DevOps TestPlan and test automation</Description>
         <Copyright/>
         <PackageLicenseExpression>MIT</PackageLicenseExpression>
         <PackageTags>test-automation, testing, test-plan, test-case, testAutomation, testCase, testPlan</PackageTags>
-        <Version>1.0.1</Version>
+        <Version>1.0.2</Version>
     </PropertyGroup>
     <ItemGroup>
         <PackageReference Include="Serilog" Version="*"/>
