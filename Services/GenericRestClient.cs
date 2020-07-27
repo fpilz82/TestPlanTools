@@ -30,7 +30,7 @@ namespace TestPlanTools.Services
             Log.Logger.Information("Sending a {0} request to {1}", method, url);
             var client = new RestClient(url)
             {
-                Authenticator = new HttpBasicAuthenticator(_config.User, _config.Token.ToString())
+                Authenticator = new HttpBasicAuthenticator(_config.User, _config.Token.ToUnsecureString())
             };
 
             var request = new RestRequest
